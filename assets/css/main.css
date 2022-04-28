@@ -72,6 +72,179 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Added CSS 1*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bbc6eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+/* Container Tooltip */
+.tooltip {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* Style text tooltip */
+.tooltipText {
+    background-color: #fff;
+    position: absolute;
+	min-width: 70px;
+	max-width: 300px;
+    bottom: 130%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.fb {color: #3B5998;}
+.tw {color: #1da1f2}
+.wa {color:#25d366}
+
+
+/*  Membuat dan style tip*/
+.tooltipText::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+
+}
+
+/* Style Icon */
+i {
+    background-color: rgba(168,164,164,0.3);
+    padding: 10px 10px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Hover text tooltip */
+.tooltip:hover .tooltipText{
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+/* Hover Background icon */
+.facebook:hover i {
+    background-color: #3B5998;
+}
+.twitter:hover i {
+    background-color: #1da1f2;
+}
+.whatsapp:hover i {
+    background-color: #25d366;
+}
+/* Added CSS 1*/
+
+/* Added CSS 2*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+figure.snip1390 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  min-width: 350px;
+  max-width: 700px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #2C3447;
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(8, 15, 116, 0.78) 0%, rgba(89, 9, 100, 0.748) 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
+}
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 30px 30px 30px 30px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+}
+figure.snip1390 blockquote:before {
+  font-family: 'FontAwesome';
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+figure.snip1390 .profile {
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #a33bbd;
+}
+figure.snip1390 .profile1 {
+	width: 100px;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+	border: solid 5px #a33bbd;
+  }
+/* Added CSS 2*/
+
+/* Added CSS 3*/
+/* Added CSS 3*/
+
 /* Basic */
 
 	@-ms-viewport {
